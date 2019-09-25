@@ -13,9 +13,9 @@ const menu = new ContextMenu(
   {
     'theme': 'default',
       'items': [
-        {'icon': 'envelope', 'name': 'Enviar',  action: () => console.log('clicou enviar');  },
-        {'icon': 'download', 'name': 'Baixar',  action: () => console.log('clicou baixar');  },
-        {'icon': 'trash',    'name': 'Remover', action: () => console.log('clicou remover'); },
+        {'icon': 'envelope', 'name': 'Enviar',  action: () => console.log('clicou enviar')  },
+        {'icon': 'download', 'name': 'Baixar',  action: () => console.log('clicou baixar')  },
+        {'icon': 'trash',    'name': 'Remover', action: () => console.log('clicou remover') },
       ]
   }
 );
