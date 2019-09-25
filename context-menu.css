@@ -10,11 +10,15 @@
   background: white;
   z-index: 100;
   border-radius: 3px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   opacity: 0;
   -webkit-transform: translate(0, 15px) scale(0.95);
   transform: translate(0, 15px) scale(0.95);
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
   transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
   pointer-events: none;
 }
 
@@ -125,15 +129,18 @@
   padding: 0;
   margin: 0;
   background: #23AFF7;
-  background: -webkit-linear-gradient(to bottom, #23AFF7 0%, #007BFF 100px, #007BFF 100%);
   background: linear-gradient(to bottom, #23AFF7 0%, #007BFF 100px, #007BFF 100%);
   z-index: 100;
   border-radius: 2px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   opacity: 0;
   -webkit-transform: translate(0, 15px) scale(0.95);
   transform: translate(0, 15px) scale(0.95);
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
+  transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
   transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  transition: transform 0.1s ease-out, opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
   pointer-events: none;
 }
 
@@ -184,7 +191,7 @@
   color: #23AFF7;
   outline: none;
   background-color: #73D0FF;
-  background: -webkit-linear-gradient(to bottom, #73D0FF, #73D0FF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#73D0FF), to(#73D0FF));
   background: linear-gradient(to bottom, #73D0FF, #73D0FF);
 }
 
